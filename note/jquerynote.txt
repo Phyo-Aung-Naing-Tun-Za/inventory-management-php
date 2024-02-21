@@ -1,0 +1,49 @@
+* Getting All data from from  => $('form').serialize();
+* Getting data from input     => $('input').val();
+* Putting html                => $('h1').html("<span>hello</span>");
+* Checking Email              => new RegExp(****);
+* Validate Email
+remove() -Removes the selected element (and its child elements)
+empty() - Removes the child elements from the selected element
+--------------------------------------------------------------------------------
+** Remove the class name "intro" from all <p> elements:
+
+$("button").click(function(){
+  $("p").removeClass("intro");
+});
+
+** Add a class name to the first <p> element:
+
+$("button").click(function(){
+  $("p:first").addClass("intro");
+});
+--------------------------------------------------------------------------------
+checking the valid email
+------------------------
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+---------------------------------------------------------------------------------
+
+* Ajax
+------
+$.ajax({
+    url: '___.php',
+    method: 'POST',
+    data: $("form").serialize(),
+    success: function($data){
+                alert($data);
+            }
+
+})
+---------------------------------------------------------------------------------
+uploading img
+var fd = new FormData($('#product-form')[0]);
+---------------------------------------------------------------------------------
+how to select multi element in jquery
+-------------------------------------
+$("body").find(".delete-cat").click(function(e){
+                    console.log(e.target);
+                })
+

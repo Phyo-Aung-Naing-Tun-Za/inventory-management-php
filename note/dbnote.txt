@@ -1,0 +1,2 @@
+Foregin key ပေးနည်းကြည့်ရန်၊
+* PersonID int FOREIGN KEY REFERENCES  `categories`(id)

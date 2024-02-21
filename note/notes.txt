@@ -1,0 +1,8 @@
+timeanddateapi  ကနေနာရီ လေးယူတာ။
+ENUM("value");
+
+(Storing passwords in database)
+*password_hash('password',PASSWORD_DEFAULT); နဲ့သိမ်း။
+*password_verify("aaaa","hash တန်ဖိုး"); နဲ့ပြန်စစ်။
+
+pagination link rk_lab/php_mysql_pagination
